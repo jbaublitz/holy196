@@ -1,0 +1,9 @@
+[package]
+name = "holy196"
+version = "0.1.0"
+authors = ["John Baublitz <john.m.baublitz@gmail.com>"]
+
+[dependencies.neli]
+version = "0.2"
+git = "https://github.com/jbaublitz/neli"
+branch = "develop"
