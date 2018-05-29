@@ -1,7 +1,9 @@
 extern crate neli;
+extern crate tokio;
 
 mod netlink;
 
 pub fn main() {
-    println!("{}", netlink::resolve_gtk_rekey_multicast_group().unwrap());
+    let gtk = netlink::NetlinkGtk::new().unwrap();
+    gtk.gtk_loop().unwrap();
 }
